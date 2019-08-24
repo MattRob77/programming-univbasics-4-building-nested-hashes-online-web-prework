@@ -29,7 +29,8 @@ end
 def monopoly_with_fourth_tier
   monopoly = {
     railroads: {
-      :names=>{:pennsylvania_railroad => {}, :reading_railroad => {}, :b_and_o_railroad => {}, :shortline_railroad => {}},
+      :names=>{:pennsylvania_railroad => {}, :reading_railroad => { Failure/Error: expect(monopoly_with_fourth_tier[:railroads][:names][:reading_railroad]["mortgage_value"]).to eq("$100")
+}, :b_and_o_railroad => {}, :shortline_railroad => {}},
       pieces: 4,
       rent_in_dollars: {
         :one_piece_owned=>25,
